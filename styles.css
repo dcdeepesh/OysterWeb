@@ -1,0 +1,250 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    padding-top: 56px;
+}
+
+@media screen and (min-width: 801px) {
+    .hr-right {
+        text-align: right;
+        margin-right: 0;
+    }
+    
+    .hr-left {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+.btn-3 {
+    background-color: white;
+    border: #218cff solid 2px;
+    border-radius: 4px;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    color: #218cff;
+    cursor: pointer;
+}
+
+.btn-3:hover {
+    background-color: #218cff;
+    color: white
+}
+
+.btn-3:active {
+    background-color: #1e7ee6;
+    color: white;
+}
+
+/* Top navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    font-size: 1.2rem;
+
+    color: #000000d0;
+    box-shadow: 0 1px 5px #00000066;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(7px);
+    
+    position: fixed;
+    top: 0;
+    height: 56px;
+    width: 100%;
+}
+
+.navbar .logo {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+    padding: 0rem 1rem;
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar p {
+    display: inline-block;
+    margin: 0;
+    padding: 0rem 0.5rem;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+}
+
+.navbar p:hover {
+    color: #218cff;
+}
+
+/* Mobile navigation bar */
+.navbar-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+    
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        user-select: none;
+        font-size: 1.2rem;
+    
+        color: #000000d0;
+        box-shadow: 0 1px 5px #00000066;
+        background-color: #ffffffcc;
+        backdrop-filter: blur(7px);
+        
+        position: fixed;
+        top: 0;
+        height: 56px;
+        width: 100%;
+    }
+
+    .navbar-mobile img {
+        height: 40px;
+        width: 40px;
+        padding: 0rem 1rem;
+        cursor: pointer;
+    }
+}
+
+/* PearlOS */
+.pearlos {
+    background-color: #e6e6e6;
+    min-height: calc(100vh - 56px - 8rem);
+    display: flex;
+    gap: 0 6rem;
+    align-items: center;
+    padding: 4rem 5%;
+    font-size: 1.5rem;
+    color: #000000d0;
+}
+
+.pearlos > .content {
+    text-align: end;
+    flex: 1;
+}
+
+.pearlos > .img-wrapper {
+    order: 1;
+    justify-self: start;
+    flex: 1;
+}
+
+.pearlos img {
+    max-width: 85%;
+}
+
+@media screen and (max-width: 800px) {
+    .pearlos {
+        flex-direction: column;
+        padding: 4rem 10%;
+    }
+
+    .pearlos > .content {
+        text-align: center;
+        order: 1;
+    }
+    
+    .pearlos > .img-wrapper {
+        text-align: center;
+    }
+}
+
+/* Oyster Cloud */
+.cloud {
+    min-height: calc(100vh - 56px - 8rem);
+    display: flex;
+    gap: 0 6rem;
+    align-items: center;
+    padding: 4rem 5%;
+    font-size: 1.5rem;
+    color: #000000d0;
+}
+
+.cloud > .content {
+    flex: 1;
+    order: 1;
+}
+
+.cloud > .img-wrapper {
+    flex: 1;
+    text-align: right;
+}
+
+.cloud img {
+    max-width: 85%;
+}
+
+@media screen and (max-width: 800px) {
+    .cloud {
+        flex-direction: column;
+        padding: 4rem 10%;
+    }
+
+    .cloud > .content {
+        text-align: center;
+        order: 1;
+    }
+    
+    .cloud > .img-wrapper {
+        text-align: center;
+    }
+}
+
+/* Team*/
+.team {
+    background-color: #e6e6e6;
+    min-height: calc(100vh - 56px - 8rem);
+    display: flex;
+    gap: 0 6rem;
+    align-items: center;
+    padding: 4rem 5%;
+    font-size: 1.5rem;
+    color: #000000d0;
+}
+
+.team > .content {
+    text-align: end;
+    flex: 1;
+}
+
+.team > .img-wrapper {
+    order: 1;
+    justify-self: start;
+    flex: 1;
+}
+
+.team img {
+    max-width: 85%;
+}
+
+@media screen and (max-width: 800px) {
+    .team {
+        flex-direction: column;
+        padding: 4rem 10%;
+    }
+
+    .team > .content {
+        text-align: center;
+        order: 1;
+    }
+    
+    .team > .img-wrapper {
+        text-align: center;
+    }
+}
