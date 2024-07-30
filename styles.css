@@ -135,6 +135,10 @@ main {
         padding: 0rem 1rem;
         cursor: pointer;
     }
+
+    .navbar-mobile img:hover {
+        background-color: #e6e6e6;
+    }
 }
 
 /* PearlOS */
